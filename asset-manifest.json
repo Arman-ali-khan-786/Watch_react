@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Watch_react/static/css/main.44ece2e6.chunk.css",
+    "main.js": "/Watch_react/static/js/main.72f99070.chunk.js",
+    "main.js.map": "/Watch_react/static/js/main.72f99070.chunk.js.map",
+    "runtime-main.js": "/Watch_react/static/js/runtime-main.fc03bda3.js",
+    "runtime-main.js.map": "/Watch_react/static/js/runtime-main.fc03bda3.js.map",
+    "static/js/2.5295bc94.chunk.js": "/Watch_react/static/js/2.5295bc94.chunk.js",
+    "static/js/2.5295bc94.chunk.js.map": "/Watch_react/static/js/2.5295bc94.chunk.js.map",
+    "static/js/3.896866f9.chunk.js": "/Watch_react/static/js/3.896866f9.chunk.js",
+    "static/js/3.896866f9.chunk.js.map": "/Watch_react/static/js/3.896866f9.chunk.js.map",
+    "index.html": "/Watch_react/index.html",
+    "static/css/main.44ece2e6.chunk.css.map": "/Watch_react/static/css/main.44ece2e6.chunk.css.map",
+    "static/js/2.5295bc94.chunk.js.LICENSE.txt": "/Watch_react/static/js/2.5295bc94.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fc03bda3.js",
+    "static/js/2.5295bc94.chunk.js",
+    "static/css/main.44ece2e6.chunk.css",
+    "static/js/main.72f99070.chunk.js"
+  ]
+}
