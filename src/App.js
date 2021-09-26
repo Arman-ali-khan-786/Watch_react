@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{Component} from 'react';
+import classes from './App.module.css';
 
-function App() {
-  return (
+//  @ak----->>>  A-R-M-A-N    A-L-I    K-H-A-N
+
+//importing different Components 
+
+import ProductPreview from './Product Preview/ProductPreview';
+import ProductDetails from './Product Details/ProductDetails';
+import Topbar from './Topbar/Topbar';
+import ProductData from './Uitils/ProductData';
+
+class App extends Component {
+  state = {
+    productData : ProductData,
+    currentImagePreviewPos : 0,
+    currentSelectedFeature : 0
+  }
+  onColorOptionClick = (pos) =>{
+    this.setState({currentImagePreviewPos : pos})
+  }
+  onFeaturesClick = (pos) => {
+    this.setState({ currentSelectedFeature : pos})
+  }
+  render(){
+    console.log("rendering App.js")
+    return(
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Topbar/>
+      <div className={classes.MainContainer}>
+        <ProductPreview currentImagePreview={this.state.productData.colorOptions[this.state.currentImagePreviewPos].imageUrl} 
+        currentSelectedFeature={this.state.currentSelectedFeature}
+        />
+        <ProductDetails data={this.state.productData} 
+         onColorOptionClick ={this.onColorOptionClick}
+         onFeaturesClick= {this.onFeaturesClick }
+         currentSelectedFeature={this.state.currentSelectedFeature}
+         currentImagePreviewPos={this.state.currentImagePreviewPos}
+         />
+      </div>
     </div>
-  );
+    );
+    
+  }  
 }
+
 
 export default App;
